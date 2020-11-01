@@ -1,0 +1,348 @@
+Microsoft Windows [Version 10.0.18362.1082]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\Divya\Desktop\Mysqldatabase>go run main.go
+2020/10/31 21:55:45 Server started on: http://localhost:8080
+2020/10/31 21:58:02 http: panic serving [::1]:51893: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00004cb40)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0xc604a0, 0xc000182290)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0xd3c5e0, 0xc0001ce000, 0xc000180700)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0xce7708, 0xd3c5e0, 0xc0001ce000, 0xc000180700)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf15540, 0xd3c5e0, 0xc0001ce000, 0xc000180700)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000144000, 0xd3c5e0, 0xc0001ce000, 0xc000180700)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00004cb40, 0xd3cd60, 0xc000184300)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:58:02 http: panic serving [::1]:51894: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc00004cbe0)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0xc604a0, 0xc0000a21f0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0xd3c5e0, 0xc0001ce0e0, 0xc0000a4500)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0xce7708, 0xd3c5e0, 0xc0001ce0e0, 0xc0000a4500)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf15540, 0xd3c5e0, 0xc0001ce0e0, 0xc0000a4500)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000144000, 0xd3c5e0, 0xc0001ce0e0, 0xc0000a4500)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00004cbe0, 0xd3cd60, 0xc00008c1c0)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:58:02 http: panic serving [::1]:51897: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc00004cc80)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0xc604a0, 0xc0001823f0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0xd3c5e0, 0xc0001440e0, 0xc0000a4600)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0xce7708, 0xd3c5e0, 0xc0001440e0, 0xc0000a4600)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf15540, 0xd3c5e0, 0xc0001440e0, 0xc0000a4600)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000144000, 0xd3c5e0, 0xc0001440e0, 0xc0000a4600)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00004cc80, 0xd3cd60, 0xc00008c280)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:58:03 http: panic serving [::1]:51899: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0xc0001de140)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0xc604a0, 0xc00003aff0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0xd3c5e0, 0xc0001441c0, 0xc000180800)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0xce7708, 0xd3c5e0, 0xc0001441c0, 0xc000180800)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf15540, 0xd3c5e0, 0xc0001441c0, 0xc000180800)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000144000, 0xd3c5e0, 0xc0001441c0, 0xc000180800)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001de140, 0xd3cd60, 0xc000184580)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:58:03 http: panic serving [::1]:51900: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc0001de1e0)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0xc604a0, 0xc0002041b0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0xd3c5e0, 0xc0001442a0, 0xc000180900)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0xce7708, 0xd3c5e0, 0xc0001442a0, 0xc000180900)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf15540, 0xd3c5e0, 0xc0001442a0, 0xc000180900)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000144000, 0xd3c5e0, 0xc0001442a0, 0xc000180900)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001de1e0, 0xd3cd60, 0xc000184600)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:58:03 http: panic serving [::1]:51903: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 70 [running]:
+net/http.(*conn).serve.func1(0xc00004cdc0)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0xc604a0, 0xc00003b1a0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0xd3c5e0, 0xc000144380, 0xc000220300)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0xce7708, 0xd3c5e0, 0xc000144380, 0xc000220300)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf15540, 0xd3c5e0, 0xc000144380, 0xc000220300)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000144000, 0xd3c5e0, 0xc000144380, 0xc000220300)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00004cdc0, 0xd3cd60, 0xc000206240)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:58:08 http: panic serving [::1]:51905: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 75 [running]:
+net/http.(*conn).serve.func1(0xc00004cf00)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0xc604a0, 0xc000182570)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0xd3c5e0, 0xc0001ce1c0, 0xc000140400)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0xce7708, 0xd3c5e0, 0xc0001ce1c0, 0xc000140400)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf15540, 0xd3c5e0, 0xc0001ce1c0, 0xc000140400)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000144000, 0xd3c5e0, 0xc0001ce1c0, 0xc000140400)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00004cf00, 0xd3cd60, 0xc0000187c0)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:58:08 http: panic serving [::1]:51906: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 76 [running]:
+net/http.(*conn).serve.func1(0xc00004cfa0)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0xc604a0, 0xc0001826d0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0xd3c5e0, 0xc0001ce2a0, 0xc000140500)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0xce7708, 0xd3c5e0, 0xc0001ce2a0, 0xc000140500)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf15540, 0xd3c5e0, 0xc0001ce2a0, 0xc000140500)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000144000, 0xd3c5e0, 0xc0001ce2a0, 0xc000140500)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00004cfa0, 0xd3cd60, 0xc000018840)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:58:08 http: panic serving [::1]:51909: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 86 [running]:
+net/http.(*conn).serve.func1(0xc0001de3c0)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0xc604a0, 0xc000182830)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0xd3c5e0, 0xc0001ce380, 0xc0000a4700)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0xce7708, 0xd3c5e0, 0xc0001ce380, 0xc0000a4700)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf15540, 0xd3c5e0, 0xc0001ce380, 0xc0000a4700)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000144000, 0xd3c5e0, 0xc0001ce380, 0xc0000a4700)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001de3c0, 0xd3cd60, 0xc00008c300)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+exit status 2
+
+C:\Users\Divya\Desktop\Mysqldatabase>go run main.go
+2020/10/31 22:01:34 Server started on: http://localhost:8080
+2020/10/31 22:02:48 http: panic serving [::1]:51924: Error 1049: Unknown database 'goblog'
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc00004cbe0)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x13104a0, 0xc00020a220)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x13ec5e0, 0xc000246000, 0xc000214200)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x1397710, 0x13ec5e0, 0xc000246000, 0xc000214200)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x15c5540, 0x13ec5e0, 0xc000246000, 0xc000214200)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014a000, 0x13ec5e0, 0xc000246000, 0xc000214200)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00004cbe0, 0x13ecd60, 0xc000210180)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 22:02:48 http: panic serving [::1]:51925: Error 1049: Unknown database 'goblog'
+goroutine 10 [running]:
+net/http.(*conn).serve.func1(0xc00004cc80)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x13104a0, 0xc00020a2a0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x13ec5e0, 0xc0002460e0, 0xc00018a700)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x1397710, 0x13ec5e0, 0xc0002460e0, 0xc00018a700)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x15c5540, 0x13ec5e0, 0xc0002460e0, 0xc00018a700)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014a000, 0x13ec5e0, 0xc0002460e0, 0xc00018a700)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00004cc80, 0x13ecd60, 0xc000018740)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 22:02:48 http: panic serving [::1]:51928: Error 1049: Unknown database 'goblog'
+goroutine 59 [running]:
+net/http.(*conn).serve.func1(0xc0002580a0)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x13104a0, 0xc00008a120)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x13ec5e0, 0xc0002461c0, 0xc000088500)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x1397710, 0x13ec5e0, 0xc0002461c0, 0xc000088500)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x15c5540, 0x13ec5e0, 0xc0002461c0, 0xc000088500)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014a000, 0x13ec5e0, 0xc0002461c0, 0xc000088500)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0002580a0, 0x13ecd60, 0xc0000940c0)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 22:02:49 http: panic serving [::1]:51930: Error 1049: Unknown database 'goblog'
+goroutine 64 [running]:
+net/http.(*conn).serve.func1(0xc000258140)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x13104a0, 0xc00020a340)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x13ec5e0, 0xc0000d0000, 0xc000214400)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x1397710, 0x13ec5e0, 0xc0000d0000, 0xc000214400)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x15c5540, 0x13ec5e0, 0xc0000d0000, 0xc000214400)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014a000, 0x13ec5e0, 0xc0000d0000, 0xc000214400)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000258140, 0x13ecd60, 0xc0002104c0)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 22:02:49 http: panic serving [::1]:51931: Error 1049: Unknown database 'goblog'
+goroutine 65 [running]:
+net/http.(*conn).serve.func1(0xc0002581e0)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x13104a0, 0xc00020a3c0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x13ec5e0, 0xc0002462a0, 0xc000214500)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x1397710, 0x13ec5e0, 0xc0002462a0, 0xc000214500)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x15c5540, 0x13ec5e0, 0xc0002462a0, 0xc000214500)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014a000, 0x13ec5e0, 0xc0002462a0, 0xc000214500)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0002581e0, 0x13ecd60, 0xc000210540)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 22:02:49 http: panic serving [::1]:51934: Error 1049: Unknown database 'goblog'
+goroutine 70 [running]:
+net/http.(*conn).serve.func1(0xc000258280)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x13104a0, 0xc00003aeb0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x13ec5e0, 0xc000246380, 0xc000088600)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x1397710, 0x13ec5e0, 0xc000246380, 0xc000088600)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x15c5540, 0x13ec5e0, 0xc000246380, 0xc000088600)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014a000, 0x13ec5e0, 0xc000246380, 0xc000088600)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000258280, 0x13ecd60, 0xc000094200)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 22:02:54 http: panic serving [::1]:51937: Error 1049: Unknown database 'goblog'
+goroutine 75 [running]:
+net/http.(*conn).serve.func1(0xc000258320)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x13104a0, 0xc00003af30)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x13ec5e0, 0xc00014a0e0, 0xc000088700)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x1397710, 0x13ec5e0, 0xc00014a0e0, 0xc000088700)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x15c5540, 0x13ec5e0, 0xc00014a0e0, 0xc000088700)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014a000, 0x13ec5e0, 0xc00014a0e0, 0xc000088700)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000258320, 0x13ecd60, 0xc000094280)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 22:02:54 http: panic serving [::1]:51938: Error 1049: Unknown database 'goblog'
+goroutine 76 [running]:
+net/http.(*conn).serve.func1(0xc0002583c0)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x13104a0, 0xc00020a490)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x13ec5e0, 0xc000246460, 0xc000088800)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x1397710, 0x13ec5e0, 0xc000246460, 0xc000088800)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x15c5540, 0x13ec5e0, 0xc000246460, 0xc000088800)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014a000, 0x13ec5e0, 0xc000246460, 0xc000088800)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0002583c0, 0x13ecd60, 0xc000094300)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 22:02:54 http: panic serving [::1]:51941: Error 1049: Unknown database 'goblog'
+goroutine 81 [running]:
+net/http.(*conn).serve.func1(0xc000258460)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x13104a0, 0xc000184100)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x13ec5e0, 0xc000246540, 0xc000088900)
+        C:/Users/Divya/Desktop/Mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x1397710, 0x13ec5e0, 0xc000246540, 0xc000088900)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x15c5540, 0x13ec5e0, 0xc000246540, 0xc000088900)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014a000, 0x13ec5e0, 0xc000246540, 0xc000088900)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000258460, 0x13ecd60, 0xc0000943c0)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+exit status 2
+
+C:\Users\Divya\Desktop\Mysqldatabase>go run main.go
+2020/10/31 22:16:47 Server started on: http://localhost:8080
+2020/10/31 22:18:42 INSERT: Name: divya | City: madhanapalle
+2020/10/31 22:18:53 UPDATE: Name: divya | City: madhanapalle
+2020/10/31 22:19:10 UPDATE: Name: divya | City: madhanapalle
+2020/10/31 22:19:14 DELETE
+2020/10/31 22:19:50 INSERT: Name: babu | City: galiveedu
+2020/10/31 22:20:05 UPDATE: Name: babu | City: chennai
+2020/10/31 22:20:09 DELETE
+2020/10/31 22:20:44 INSERT: Name: mamatha | City: bngl
+2020/10/31 22:21:12 INSERT: Name: divya avula | City: nooliveedu
+2020/10/31 22:21:26 INSERT: Name: venkat | City: kadapa
+2020/10/31 22:22:22 INSERT: Name: madhan reddy | City: hyd
